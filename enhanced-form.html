@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Content and Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates the use of semantic HTML elements, tables, lists, media, and an interactive form.</p>
+  </header>
+  <section>
+  <h2>Top Skills List</h2>
+  <ul>
+    <li>HTML5 & Semantic Markup</li>
+    <li>CSS3 Styling</li>
+    <li>Git & GitHub</li>
+    <li>Responsive Design</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Course Schedule Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Topic</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>HTML Basics</td>
+        <td>10:00 AM - 12:00 PM</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>HTML Forms</td>
+        <td>10:00 AM - 12:00 PM</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>Media and Accessibility</td>
+        <td>10:00 AM - 12:00 PM</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section>
+  <h2>Sample Media</h2>
+  <p>Here’s a sample image, audio, and video embedded using semantic HTML5:</p>
+
+  <figure>
+    <img src="https://via.placeholder.com/400x200" alt="Sample placeholder image" width="400" />
+    <figcaption>Sample Image</figcaption>
+  </figure>
+
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <video width="400" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+<section>
+  <h2>Registration Form</h2>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" autocomplete="name"/>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required autocomplete="email"/>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="08012345678" pattern="[0-9]{11}" required/>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required/>
+    </fieldset>
+
+    <fieldset>
+      <legend>Account Details</legend>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required minlength="4"/>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required minlength="6"/>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Info</legend>
+
+      <label for="bio">Short Bio:</label>
+      <textarea id="bio" name="bio" rows="4" maxlength="300" placeholder="Tell us something about yourself..."></textarea>
+
+      <label>
+        <input type="checkbox" name="subscribe" checked readonly />
+        Subscribe to newsletter (automatic)
+      </label>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+  <footer>
+  <p>&copy; 2025 HTML5 Practice Page. Built with ❤️ by a PLP Learner.</p>
+</footer>
+</body>
+</html>
